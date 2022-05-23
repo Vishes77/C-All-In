@@ -30,8 +30,27 @@ Vector: aka dynamic array : continuous + dynamic .
 using namespace std;
 int main() {
   
-  vector<int> v;
-
+   vector<int> v = {1,2,3,4,5};
+   cout<<"Ways To Traverse a Vector"<<endl;
+   cout<<endl;
+   cout<<"-Using Indexing "<<endl;
+   for(int i=0;i<v.size();i++){
+        cout<<v[i]<<" ";   
+   }
+   cout<<endl<<"-Iterate using Iterators"<<endl;
+   vector<int>::iterator it;
+   for(it = v.begin();it<v.end();it++){
+       cout<<*it<<" ";
+   }
+   cout<<endl<<"-OR using auto"<<endl;
+   for(auto i=v.begin();i<v.end();i++){
+       cout<<*i<<" ";
+   }
+   cout<<endl<<"-OR Iterate using range-based for loop using Advance For_Loop"<<endl;
+   for(auto i : v){
+       cout<<i<<" ";
+   }
+   
   vector<int> a(5,1);   // make a vector of size 5 and initalize all elemensts with 1.
                         // default value of vector is 0.
 
