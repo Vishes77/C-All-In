@@ -100,8 +100,8 @@ int main() {
     //vector::erase()
     // erase() function is used to remove elements from a container from the specified position or range.
     //Syntax : 
-    //1. vectorname.erase(position)
-    //2. vectorname.erase(startingposition, endingposition)
+    //1. vectorname.erase(iterator)
+    //2. vectorname.erase(startingiterator, endingiterator)
     
     
     vector<int> myvector{ 1, 2, 3, 4, 5 };
