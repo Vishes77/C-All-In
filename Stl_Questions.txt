@@ -25,6 +25,24 @@ int main(){
 
 Vector: aka dynamic array : continuous + dynamic .
 
+
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+
+
+int main(){
+    
+    vector<int> v1 = {2,5,1,3,0};
+    vector<int> v2 = {8,10,5,7,9};
+    
+    //accessing indices in vector
+    cout<<v1[3]<<endl;
+    cout<<v1.at(3);
+    
+}
+
+
 #include <iostream>
 #include<vector>
 using namespace std;
